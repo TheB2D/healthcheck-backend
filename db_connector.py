@@ -11,3 +11,5 @@ client = MongoClient(URI, tlsInsecure=True)
 
 def get_db():
     return client["health_ally"]["data"]
+
+get_db().delete_many({})
